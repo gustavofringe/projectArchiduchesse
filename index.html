@@ -10,52 +10,121 @@
         <link rel="icon" type="image/svg+xml" href="logo2.svg">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
     <header id="header">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-md-4"><a href="#" id="header_logo" title="archiduchesse"></a></div>
-                <!-- /.col-sm-4 -->
-
-                <!-- /.col-sm-4 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!--<div class="navbar">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed col-md-4 dropdown-menu-right" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/logo.svg" alt="" id="logo">
+                    </div>
+                    &lt;!&ndash;<div class="col-sm-4" id="navbar">
+                        <nav class="navbar-collapse collapse navbar-collapse nav-justified">
+                            <ul id="menu" class="nav navbar">
+                                <li class="active"><a href="">Shop</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>&ndash;&gt;
+                        <div id="navbar" class="collapse navbar-collapse nav-justified col-md-4">
+                            <nav class="nav-inverse">
+                                <ul class="nav navbar-nav ">
+                                    <li class="active"><a href="index.html">Shop</a></li>
+                                    <li><a href="pages/blog.html">Blog</a></li>
+                                    <li><a href="pages/contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+        <div class="page-header" >
+            <div class="navbar-wrapper navbar-default navbar-fixed-top " role="navigation">
+                <div class="menu">
+                    <button style="float:left" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+
                 </div>
-                <div id="navbar" class="collapse navbar-collapse">
+
+                <div id="sou" class="collapse navbar-collapse sous-menu">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" id="forms"class="dropdown-toggle" data-toggle="dropdown">Forms</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Panel Form</a></li>
+                                <li><a href="#" id="pageform">Page Form</a></li>
+                                <li><a href="#" id="rechville">Recherche de ville</a></li>
+                            </ul>
+                        </li>
+                        <!--<li class="dropdown">
+                            <a href="#" id="onglets" class="dropdown-toggle" data-toggle="dropdown">Onglets</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" id="onglet1">Onglet 1</a></li>
+                                <li><a href="#" id="ongletvertical">Onglet Vertical</a></li>
+                            </ul>
+                        </li>-->
+                        <li class="dropdown">
+                            <a href="#" id="etapes" class="dropdown-toggle" data-toggle="dropdown">Etapes</a>
+                        </li><li class="dropdown">
+                        <a href="#" id="charts" class="dropdown-toggle" data-toggle="dropdown">Charts</a>
+                    </li><li class="dropdown">
+                        <a href="#" id="divers" class="dropdown-toggle" data-toggle="dropdown">Divers</a>
+                    </li><li class="dropdown">
+                        <a href="#" id="parametre" class="dropdown-toggle" data-toggle="dropdown">Param&egrave;tres</a>
+                    </li>
+                        <span id="ca" class="fa fa-arrow-circle-o-up fa-2x cacherhaut"></span>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div>
             </div>
-        </nav>
+        </div>
+        </div>
+
+
 
     </header>
-
+    <footer id="footer">
+        <div id="coq" class="col-xs-6 col-md4"><p>Frabrication Française</p></div>
+        <div id="paypal" class="col-xs-6 col-md4">Paiement Sécurisé</div>
+        <div id="post" class="col-xs-6 col-md4">Livraison 48/72 heures</div>
+        <div id="address" class="col-xs-6 col-md4">38, rue Michelet
+            42000 Saint-Etienne
+            04.27.81.58.70</div>
+        <div id="facebook" class="col-xs-6 col-md4">Facebook
+            Plus de 20 000
+            pouces en l'air</div>
+        <div id="twitter" class="col-xs-6 col-md4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

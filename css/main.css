@@ -2,33 +2,40 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #F4F4F1;
+    height: 200px;
+    background: #F4F4F1;
 }
-#header_logo{
-    width: 323px;
-    height: 93px;
+#logo{
+    width: 150px;
     content: url("../img/logo.svg");
 }
-#caret{
-
-    display: block;
-    border-radius: 3px;
-    background-color: #616161;
+#button{
     width: 40px;
-    height: 30px;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    left: 286px;
+    height: 40px;
+    background-image: url("../img/menu.svg") ;
+    background-size: cover;
+
 }
-#caret:after {
-    content: '';
-    margin: 0 auto;
-    padding: 0;
-    display: block;
-    width: 1.2rem;
-    height: 0;
-    -webkit-box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
-    -moz-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
-    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+#menu{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
 }
+#menu li{
+    display: inline-block;
+    width: 70px;
+}
+#menu li a{
+    color: #000;
+    text-decoration: none;
+}
+#menu .active{
+    color: #333333;
+    background: #ffffff;
+}
+.card{
+    width: 296px;
+    height: 150px;
+    background: url("../img/ticket-repeat.png");
+}
+
