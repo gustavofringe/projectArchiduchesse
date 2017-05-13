@@ -2,11 +2,24 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+@import "compass";
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/css3/font-face";
+@import "compass/utilities";
+@import "_header";
 $color-b:#F4F4F1;
+.container{@include clearfix;}
+a{
+  text-decoration: none;
+  color: inherit;
+}
 #header{
+  position: static;
+  left: 0;
+  right: 0;
+  height: 80px;
+  line-height: 66px;
   background-color: $color-b;
   .row{
     img{
@@ -31,143 +44,27 @@ $color-b:#F4F4F1;
           right: 15px;
           font-size: 11px;
           font-weight: bold;
-          color: #d9edf7;
+          color: /*#d9edf7*/ black;
           width: 18px;
           height: 18px;
           background-color: #B35860;
-          border-radius:30px;
+          @include border-radius(30px);
         }
-      }
-    }
-    .navbar{
-      background-color: transparent;
-      border: none;
-    }
-    .navbar-collapse{
-      width: 150px;
-    }
-    #dropdown-toggle{
-      padding-top: 10px;
-      border-style: none;
-      background: none;
-      text-decoration: underline;
-      img{
-        height: 25px;
-        width: 25px;
       }
     }
   }
 }
-/*====================================================================
-footer
-=======================================================================*/
-#footer{
-  background-color: $color-b;
-  background-size: cover;
-  height: 600px;
-  .row {
-    #twitter, #facebook{
-    a{
-      display: none;
-    }
-  }
-    #coq, #paypal, #post, #address {
-      min-height: 1px;
-      padding-left: 10px;
-      padding-right: 10px;
-     /* width: 33%;
-      height: 33%;*/
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      display: block;
-      a {
-        text-decoration: none;
-        text-align: center;
-        font-size: 14px;
-        display: block;
-        /*margin: 0 auto 30px auto;
-        min-width: 300px;
-        padding: 15px 30px;*/
-        color: #999;
-        min-height: 150px;
-        /*
-              background: rgba(0,0,0,0.03);
-              border: 1px solid rgba(0,0,0,0.08);*/
-        border-radius: 10px;
-        &:hover {
-          color: #000;
-        }
-        img{
-          margin: 0 auto;
-          display: block;
-          height: 50px;
-        }
-      }
-    }
-    #coq{
-      a{
-        img{
-          &:hover{
-            height: 50px;
-            content: url("../../img/picto_fabrication(2).png");
-          }
-        }
-      }
-    }
-    #paypal{
-      a{
-        img{
-          &:hover{
-            height: 50px;
-            content: url("../../img/picto_paypal(2).png");
-          }
-        }
-      }
-    }
-    #post{
-      a{
-        img{
-          &:hover{
-            height: 50px;
-            content: url("../../img/picto_livraison(2).png");
-          }
-        }
-      }
-    }
-    #address{
-      /*========================================================
-      picto address
-      ==========================================================*/
-      a{
-        img{
-          &:hover{
-            height: 50px;
-            content: url("../../img/picto_adresse(2).png");
-          }
-        }
-      }
-    }
-  }
-  #newsletter{
-    .row{
-      p{
-        padding-top: 20px;
-        text-align: center;
-        font-size: 12px;
-      }
-      form{
-        padding-top: 10px;
-        .news-l{
-          width: 100%;
-          text-align: center;
-        }
-        #news{
-          width: 80%;
-          display: inline-block;
-        }
-      }
-      color: #999;
-    }
+.header__logo{
+  font-weight:bold;
+  padding: 0 10px;
+}
+#menu{
+  a{
+    display: inline-block;
+    padding: 0 20px;
   }
 }
+
+@import "tablet";
+@import "desktop";
+@import "footer";
