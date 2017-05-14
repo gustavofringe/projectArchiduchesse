@@ -3,66 +3,65 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import "compass";
-@import "compass/reset";
+/*@import "compass/reset";*/
 @import "compass/css3";
 @import "compass/css3/font-face";
 @import "compass/utilities";
 @import "_header";
-$color-b:#F4F4F1;
-.container{@include clearfix;}
-a{
-  text-decoration: none;
-  color: inherit;
-}
-#header{
-  position: static;
-  left: 0;
-  right: 0;
-  height: 80px;
-  line-height: 66px;
-  background-color: $color-b;
-  .row{
-    img{
-      width: 150px;
+$color-f:#555555;
+/*===================================================================
+index page
+=====================================================================*/
+.site-content {
+  .container {
+    @include clearfix;
+    h1 {
+      font-size: 1.8em;
+      color: $color-f;
     }
-    #panier{
-      height: 46px;
-      padding: 0;
-      margin: 0;
-      .panier{
-        position: relative;
-        width:60px;
-        img{
-          height: 40px;
-          width: 40px;
-          padding-top: 10px;
+    .size {
+      width: 100%;
+      a {
+        @include box-sizing(border-box);
+        display: inline-block;
+        position: relative !important;
+        right: inherit !important;
+        margin-bottom: 10px;
+        width: 62px;
+        height: 26px;
+        text-align: center;
+        padding-top: 6px;
+        font: 12px Tahoma, sans-serif;
+        background-color: $color-b;
+        @include border-radius(4px);
+        @include box-shadow( inset 0 0 3px rgba(68,68,68,0.08));
+        &:nth-child(1){
+          color: $color-b;
+          background-color: $color-f;
         }
-        span{
-          text-align: center;
-          position: absolute;
-          top: 6px;
-          right: 15px;
-          font-size: 11px;
-          font-weight: bold;
-          color: /*#d9edf7*/ black;
-          width: 18px;
-          height: 18px;
-          background-color: #B35860;
-          @include border-radius(30px);
+        &:hover{
+          background-color: #4A4A4C;
+          color: $color-f;
+        }
+      }
+    }
+    .row{
+      overflow-y:scroll;
+      .image-head{
+        figure{
+          img{
+            width: 350px;
+            padding-bottom: 10px;
+          }
         }
       }
     }
   }
 }
-.header__logo{
-  font-weight:bold;
-  padding: 0 10px;
-}
-#menu{
-  a{
-    display: inline-block;
-    padding: 0 20px;
-  }
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @import "tablet";
