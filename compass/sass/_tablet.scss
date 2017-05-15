@@ -2,12 +2,12 @@
 tablet portrait
 =========================================================*/
 @media only screen and (min-width: 768px) {
-  .site-content{
-    .container{
-      .row{
-        .image-head{
-          figure{
-            img{
+  .site-content {
+    .container {
+      .row {
+        .image-head {
+          figure {
+            img {
               width: 100%;
             }
           }
@@ -16,19 +16,54 @@ tablet portrait
     }
   }
 }
+
+#first, #third, #four, #five {
+  img {
+    width: 600px;
+    border: 1px solid #BABBB7;
+    padding: 6px;
+  }
+}
+
 /*============================================================
  tablet landscape format
 ===============================================================*/
 @media only screen and (min-width: 1024px) {
-.site-content{
-  .container{
-    .size{
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      right: 0;
-      top: 400px;
+  .site-content {
+    .container {
+      .size {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 400px;
+      }
+    }
+    .none{
+      display: block;
+      h3{
+        font-size: 15px;
+        display: inline-block;
+        span{
+          display: block;
+        }
+      }
+      ul{
+        li{
+          list-style-type: none;
+          a{
+            color: #70ACBF;
+            &:hover{
+              color: black;
+            }
+          }
+        }
+      }
+        img{
+          width: 30px;
+          display: inline-block;
+        }
+
     }
   }
-}
 }

@@ -39,11 +39,11 @@ $color-b:#F4F4F1;
     }
     #menu{
       z-index: 2;
-      position: fixed;
+      position: absolute;
       left: 0;
       top: 0;
       bottom: 0;
-      background-color: darken($color-b, 5);
+      background-color: darken($color-b, 5) !important;
       width: $menu-width;
       @include transform(translateX($menu-width * -1));
       @include transition-duration(0.4s);
@@ -164,6 +164,10 @@ tablet landscape format
             display: none;
           }
           #menu-bottom{
+
+            position: absolute !important;
+            left: 250px;
+            top: 100px;
             display: flex;
           }
           #menu-head{
@@ -183,9 +187,6 @@ tablet landscape format
             }
           }
           .nav-tabs{
-            position: absolute;
-            left: 250px;
-            top: 150px;
             li{
               border: 1px solid transparent;
               a{

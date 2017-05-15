@@ -1,13 +1,13 @@
 /*====================================================================
 footer
 =======================================================================*/
-#footer{
+#footer {
   background-color: $color-b;
   background-size: cover;
   height: 600px;
   .row {
-    #twitter, #facebook{
-      a{
+    #twitter, #facebook {
+      a {
         display: none;
       }
     }
@@ -38,50 +38,50 @@ footer
         &:hover {
           color: #000;
         }
-        img{
+        img {
           margin: 0 auto;
           display: block;
           height: 50px;
         }
       }
     }
-    #coq{
-      a{
-        img{
-          &:hover{
+    #coq {
+      a {
+        img {
+          &:hover {
             height: 50px;
             content: url("../../img/picto_fabrication(2).png");
           }
         }
       }
     }
-    #paypal{
-      a{
-        img{
-          &:hover{
+    #paypal {
+      a {
+        img {
+          &:hover {
             height: 50px;
             content: url("../../img/picto_paypal(2).png");
           }
         }
       }
     }
-    #post{
-      a{
-        img{
-          &:hover{
+    #post {
+      a {
+        img {
+          &:hover {
             height: 50px;
             content: url("../../img/picto_livraison(2).png");
           }
         }
       }
     }
-    #address{
+    #address {
       /*========================================================
       picto address
       ==========================================================*/
-      a{
-        img{
-          &:hover{
+      a {
+        img {
+          &:hover {
             height: 50px;
             content: url("../../img/picto_adresse(2).png");
           }
@@ -89,25 +89,41 @@ footer
       }
     }
   }
-  #newsletter{
-    .row{
-      p{
+  #newsletter {
+    .row {
+      p {
         padding-top: 20px;
         text-align: center;
         font-size: 12px;
       }
-      form{
+      form {
         padding-top: 10px;
-        .news-l{
+        .news-l {
           width: 100%;
           text-align: center;
         }
-        #news{
+        #news {
           width: 80%;
           display: inline-block;
         }
       }
       color: #999;
+    }
+  }
+}
+
+/*=================================================================
+tablet landscape format
+=====================================================================*/
+@media only screen and (min-width: 1024px) {
+  #footer {
+    .row {
+      #twitter, #facebook {
+        a {
+          display: block !important;
+          height: 50px;
+        }
+      }
     }
   }
 }

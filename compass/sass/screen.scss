@@ -57,16 +57,16 @@ index page
       }
     }
     .image-socks {
-      .row{
+      .row {
         figure {
           width: 220px;
-          padding-top:20px;
+          padding-top: 20px;
           position: relative;
           figcaption {
             padding-left: 50px;
             font-size: 11px;
           }
-          .price{
+          .price {
             position: absolute;
             top: 0;
             right: 0;
@@ -79,7 +79,47 @@ index page
   }
 }
 
+/*==============================================================
+blog page
+===============================================================*/
+h2 {
+  font-size: 15px;
+  span {
+    display: block;
+    font-size: 11px;
+  }
+}
 
+iframe {
+  width: 350px;
+}
+
+#first {
+
+  h1 {
+    font-size: 15px;
+    span {
+      font-size: 11px;
+      display: block;
+    }
+  }
+  p {
+    text-align: left;
+
+  }
+}
+
+#first,#third, #four, #five {
+  img {
+    width: 350px;
+    border: 1px solid #BABBB7;
+    padding: 6px;
+  }
+}
+
+.none {
+  display: none;
+}
 
 @import "tablet";
 @import "desktop";

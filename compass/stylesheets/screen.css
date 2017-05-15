@@ -45,11 +45,11 @@
 /* line 40, ../sass/_header.scss */
 #header .container #menu {
   z-index: 2;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: #e9e9e3;
+  background-color: #e9e9e3 !important;
   width: 250px;
   -moz-transform: translateX(-250px);
   -ms-transform: translateX(-250px);
@@ -185,9 +185,12 @@ tablet landscape format
   }
   /* line 166, ../sass/_header.scss */
   #header .container .row #menu #menu-bottom {
+    position: absolute !important;
+    left: 250px;
+    top: 100px;
     display: flex;
   }
-  /* line 169, ../sass/_header.scss */
+  /* line 173, ../sass/_header.scss */
   #header .container .row #menu #menu-head {
     width: 500px;
     position: absolute;
@@ -195,30 +198,24 @@ tablet landscape format
     left: 600px;
     display: flex;
   }
-  /* line 177, ../sass/_header.scss */
+  /* line 181, ../sass/_header.scss */
   #header .container .row #menu #menu-head li {
     list-style-type: none;
   }
-  /* line 179, ../sass/_header.scss */
+  /* line 183, ../sass/_header.scss */
   #header .container .row #menu #menu-head li a {
     border: 1px solid transparent;
   }
-  /* line 185, ../sass/_header.scss */
-  #header .container .row #menu .nav-tabs {
-    position: absolute;
-    left: 250px;
-    top: 150px;
-  }
-  /* line 189, ../sass/_header.scss */
+  /* line 190, ../sass/_header.scss */
   #header .container .row #menu .nav-tabs li {
     border: 1px solid transparent;
   }
-  /* line 191, ../sass/_header.scss */
+  /* line 192, ../sass/_header.scss */
   #header .container .row #menu .nav-tabs li a {
     width: 103px !important;
     line-height: 9px;
   }
-  /* line 194, ../sass/_header.scss */
+  /* line 195, ../sass/_header.scss */
   #header .container .row #menu .nav-tabs li a span {
     font-size: 11px;
   }
@@ -299,6 +296,50 @@ index page
   background-color: #F4F4F1;
 }
 
+/*==============================================================
+blog page
+===============================================================*/
+/* line 85, ../sass/screen.scss */
+h2 {
+  font-size: 15px;
+}
+/* line 87, ../sass/screen.scss */
+h2 span {
+  display: block;
+  font-size: 11px;
+}
+
+/* line 93, ../sass/screen.scss */
+iframe {
+  width: 350px;
+}
+
+/* line 99, ../sass/screen.scss */
+#first h1 {
+  font-size: 15px;
+}
+/* line 101, ../sass/screen.scss */
+#first h1 span {
+  font-size: 11px;
+  display: block;
+}
+/* line 106, ../sass/screen.scss */
+#first p {
+  text-align: left;
+}
+
+/* line 113, ../sass/screen.scss */
+#first img, #third img, #four img, #five img {
+  width: 350px;
+  border: 1px solid #BABBB7;
+  padding: 6px;
+}
+
+/* line 120, ../sass/screen.scss */
+.none {
+  display: none;
+}
+
 /*========================================================
 tablet portrait
 =========================================================*/
@@ -308,17 +349,54 @@ tablet portrait
     width: 100%;
   }
 }
+/* line 21, ../sass/_tablet.scss */
+#first img, #third img, #four img, #five img {
+  width: 600px;
+  border: 1px solid #BABBB7;
+  padding: 6px;
+}
+
 /*============================================================
  tablet landscape format
 ===============================================================*/
 @media only screen and (min-width: 1024px) {
-  /* line 25, ../sass/_tablet.scss */
+  /* line 34, ../sass/_tablet.scss */
   .site-content .container .size {
     display: flex;
     flex-direction: column;
     position: fixed;
     right: 0;
     top: 400px;
+  }
+  /* line 42, ../sass/_tablet.scss */
+  .site-content .none {
+    display: block;
+  }
+  /* line 44, ../sass/_tablet.scss */
+  .site-content .none h3 {
+    font-size: 15px;
+    display: inline-block;
+  }
+  /* line 47, ../sass/_tablet.scss */
+  .site-content .none h3 span {
+    display: block;
+  }
+  /* line 52, ../sass/_tablet.scss */
+  .site-content .none ul li {
+    list-style-type: none;
+  }
+  /* line 54, ../sass/_tablet.scss */
+  .site-content .none ul li a {
+    color: #70ACBF;
+  }
+  /* line 56, ../sass/_tablet.scss */
+  .site-content .none ul li a:hover {
+    color: black;
+  }
+  /* line 62, ../sass/_tablet.scss */
+  .site-content .none img {
+    width: 30px;
+    display: inline-block;
   }
 }
 /*====================================================================
