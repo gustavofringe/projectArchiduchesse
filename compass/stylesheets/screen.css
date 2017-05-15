@@ -145,22 +145,96 @@
   right: 0;
 }
 
+/*=================================================================
+tablet landscape format
+=====================================================================*/
+@media only screen and (min-width: 1024px) {
+  /* line 139, ../sass/_header.scss */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* line 143, ../sass/_header.scss */
+  #header {
+    position: relative;
+    height: 150px;
+  }
+  /* line 148, ../sass/_header.scss */
+  #header .container .row #panier {
+    display: none;
+  }
+  /* line 151, ../sass/_header.scss */
+  #header .container .row .header__icon {
+    display: none;
+  }
+  /* line 155, ../sass/_header.scss */
+  #header .container .row #logo {
+    position: absolute;
+    top: 15px;
+    right: 500px;
+    width: 300px;
+  }
+  /* line 161, ../sass/_header.scss */
+  #header .container .row #menu {
+    background-color: #F4F4F1;
+  }
+  /* line 163, ../sass/_header.scss */
+  #header .container .row #menu .border {
+    display: none;
+  }
+  /* line 166, ../sass/_header.scss */
+  #header .container .row #menu #menu-bottom {
+    display: flex;
+  }
+  /* line 169, ../sass/_header.scss */
+  #header .container .row #menu #menu-head {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 600px;
+    display: flex;
+  }
+  /* line 177, ../sass/_header.scss */
+  #header .container .row #menu #menu-head li {
+    list-style-type: none;
+  }
+  /* line 179, ../sass/_header.scss */
+  #header .container .row #menu #menu-head li a {
+    border: 1px solid transparent;
+  }
+  /* line 185, ../sass/_header.scss */
+  #header .container .row #menu .nav-tabs {
+    position: absolute;
+    left: 250px;
+    top: 150px;
+  }
+  /* line 189, ../sass/_header.scss */
+  #header .container .row #menu .nav-tabs li {
+    border: 1px solid transparent;
+  }
+  /* line 191, ../sass/_header.scss */
+  #header .container .row #menu .nav-tabs li a {
+    width: 103px !important;
+    line-height: 9px;
+  }
+  /* line 194, ../sass/_header.scss */
+  #header .container .row #menu .nav-tabs li a span {
+    font-size: 11px;
+  }
+}
 /*===================================================================
 index page
 =====================================================================*/
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 .site-content .container {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 18, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .site-content .container h1 {
   font-size: 1.8em;
   color: #555555;
-}
-/* line 22, ../sass/screen.scss */
-.site-content .container .size {
-  width: 100%;
 }
 /* line 24, ../sass/screen.scss */
 .site-content .container .size a {
@@ -203,13 +277,50 @@ index page
   width: 350px;
   padding-bottom: 10px;
 }
-
-/* line 62, ../sass/screen.scss */
-a {
-  text-decoration: none;
-  color: inherit;
+/* line 61, ../sass/screen.scss */
+.site-content .container .image-socks .row figure {
+  width: 220px;
+  padding-top: 20px;
+  position: relative;
+}
+/* line 65, ../sass/screen.scss */
+.site-content .container .image-socks .row figure figcaption {
+  padding-left: 50px;
+  font-size: 11px;
+}
+/* line 69, ../sass/screen.scss */
+.site-content .container .image-socks .row figure .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #F4F4F1;
 }
 
+/*========================================================
+tablet portrait
+=========================================================*/
+@media only screen and (min-width: 768px) {
+  /* line 10, ../sass/_tablet.scss */
+  .site-content .container .row .image-head figure img {
+    width: 100%;
+  }
+}
+/*============================================================
+ tablet landscape format
+===============================================================*/
+@media only screen and (min-width: 1024px) {
+  /* line 25, ../sass/_tablet.scss */
+  .site-content .container .size {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 400px;
+  }
+}
 /*====================================================================
 footer
 =======================================================================*/

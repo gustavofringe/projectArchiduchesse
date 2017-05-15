@@ -8,7 +8,8 @@
 @import "compass/css3/font-face";
 @import "compass/utilities";
 @import "_header";
-$color-f:#555555;
+
+$color-f: #555555;
 /*===================================================================
 index page
 =====================================================================*/
@@ -20,7 +21,6 @@ index page
       color: $color-f;
     }
     .size {
-      width: 100%;
       a {
         @include box-sizing(border-box);
         display: inline-block;
@@ -34,24 +34,44 @@ index page
         font: 12px Tahoma, sans-serif;
         background-color: $color-b;
         @include border-radius(4px);
-        @include box-shadow( inset 0 0 3px rgba(68,68,68,0.08));
-        &:nth-child(1){
+        @include box-shadow(inset 0 0 3px rgba(68, 68, 68, 0.08));
+        &:nth-child(1) {
           color: $color-b;
           background-color: $color-f;
         }
-        &:hover{
+        &:hover {
           background-color: #4A4A4C;
           color: $color-f;
         }
       }
     }
-    .row{
-      overflow-y:scroll;
-      .image-head{
-        figure{
-          img{
+    .row {
+      overflow-y: scroll;
+      .image-head {
+        figure {
+          img {
             width: 350px;
             padding-bottom: 10px;
+          }
+        }
+      }
+    }
+    .image-socks {
+      .row{
+        figure {
+          width: 220px;
+          padding-top:20px;
+          position: relative;
+          figcaption {
+            padding-left: 50px;
+            font-size: 11px;
+          }
+          .price{
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include border-radius(5px);
+            background-color: $color-b;
           }
         }
       }
@@ -59,10 +79,7 @@ index page
   }
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
 
 @import "tablet";
 @import "desktop";

@@ -1,4 +1,34 @@
-
+/*========================================================
+tablet portrait
+=========================================================*/
 @media only screen and (min-width: 768px) {
-
+  .site-content{
+    .container{
+      .row{
+        .image-head{
+          figure{
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*============================================================
+ tablet landscape format
+===============================================================*/
+@media only screen and (min-width: 1024px) {
+.site-content{
+  .container{
+    .size{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      right: 0;
+      top: 400px;
+    }
+  }
+}
 }

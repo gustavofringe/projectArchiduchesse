@@ -132,3 +132,73 @@ $color-b:#F4F4F1;
     right: 0;
   }
 }
+/*=================================================================
+tablet landscape format
+=====================================================================*/
+@media only screen and (min-width: 1024px) {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  #header{
+    position: relative;
+    height: 150px;
+    .container{
+      .row{
+        #panier{
+          display: none;
+        }
+        .header__icon{
+          display: none;
+
+        }
+        #logo{
+          position: absolute;
+          top: 15px;
+          right: 500px;
+          width: 300px;
+        }
+        #menu{
+          background-color: $color-b;
+          .border{
+            display: none;
+          }
+          #menu-bottom{
+            display: flex;
+          }
+          #menu-head{
+            width: 500px;
+
+            position: absolute;
+            top: 0;
+            left: 600px;
+
+              display: flex;
+              li{
+                list-style-type: none;
+                a{
+                  border: 1px solid transparent;
+                }
+
+            }
+          }
+          .nav-tabs{
+            position: absolute;
+            left: 250px;
+            top: 150px;
+            li{
+              border: 1px solid transparent;
+              a{
+                width: 103px !important;
+                line-height: 9px;
+                span{
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
