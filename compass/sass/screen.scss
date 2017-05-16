@@ -120,6 +120,9 @@ iframe {
 .none {
   display: none;
 }
+#map{
+  height: 300px;
+}
 
 @import "tablet";
 @import "desktop";

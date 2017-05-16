@@ -340,6 +340,11 @@ iframe {
   display: none;
 }
 
+/* line 123, ../sass/screen.scss */
+#map {
+  height: 300px;
+}
+
 /*========================================================
 tablet portrait
 =========================================================*/
@@ -499,4 +504,18 @@ footer
 #footer #newsletter .row form #news {
   width: 80%;
   display: inline-block;
+}
+
+/*=================================================================
+tablet landscape format
+=====================================================================*/
+@media only screen and (min-width: 1024px) {
+  /* line 122, ../sass/_footer.scss */
+  #footer .row #twitter a, #footer .row #facebook a {
+    display: block !important;
+  }
+  /* line 124, ../sass/_footer.scss */
+  #footer .row #twitter a img, #footer .row #facebook a img {
+    height: 50px !important;
+  }
 }

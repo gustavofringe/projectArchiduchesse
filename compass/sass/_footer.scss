@@ -121,7 +121,9 @@ tablet landscape format
       #twitter, #facebook {
         a {
           display: block !important;
-          height: 50px;
+          img{
+            height: 50px !important;
+          }
         }
       }
     }
