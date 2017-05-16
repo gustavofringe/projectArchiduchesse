@@ -141,7 +141,7 @@ tablet landscape format
     color: inherit;
   }
   #header{
-    position: relative;
+    /*position: relative;*/
     height: 150px;
     .container{
       .row{
@@ -153,10 +153,10 @@ tablet landscape format
 
         }
         #logo{
-          position: absolute;
+          /*position: absolute;
           top: 15px;
-          right: 500px;
-          width: 300px;
+          right: 0px;
+          width: 300px;*/
         }
         #menu{
           background-color: $color-b;
